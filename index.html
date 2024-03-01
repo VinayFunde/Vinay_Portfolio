@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="image not found">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer(Software Engineer)</p>
+                <h1>Hi, I'm <span>Vinay Funde</span><br> from Nagpur,India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------About-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Vinay-PP.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>B.Tech in computer science with a CGPA of 8.25 in academics. Have
+                        knowledge of C#, C++, HTML, CSS, JavaScript, SQL Server, Bootstrap,
+                        WordPress, Adobe Photoshop Core Java, and Advanced Java. Ability to
+                        design, develop, and maintain a web application
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>WordPress</span><br>WordPress Web App Development</li>
+                            <li><span>Java Development</span><br>Java Based Web Development</li>
+                            <li><span>Database Management</span><br>Management of Data Using DBMS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>15/Jan/2024--Current</span><br> Intershipe at Slash Mark as a Full Stack Web
+                                Developer </li>
+                            <li><span>6/12/2023--current</span><br>Intershipe at IT_Eduction as Web Developer</li>
+                            <li><span>15/Mar/2023 -- 30/Apr/2023 </span><br>UI/UX Development Intershipe From Next24tech
+                                Technology & Services</li>
+                            <li><span>1/July/2022 -- 30/Aug/2022</span><br>Cloud & Dev Ops Engineering Virtual Internship From Red-Hat Academy</li>
+                            <li><span>Database Management</span><br>Management of Data Using DBMS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology in computer science (07/2020 - Present)</span><br>JD College of Engineering and
+                                Management, Nagpur  -(8.25 CGPA)</li>
+                            <li><span>Higher Secondary School ( 06/2020 )</span><br>VMV College, Wardhaman Nagar, Nagpur  -(71.85 %)</li>
+                            <li><span> Secondary School (2018) </span><br>Nagpure Vidayalaya  -(80.60 %)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate" >
+                        <ul>
+                            <li><span>ISO certifite Disha Institute</span><br>Certificate Course in HTML, CSS, JavaScript, Bootstrap, SQL, Java and  
+                            Advance java 
+                           </li>
+                           <li><span>NPTEL (National Programme on Technology Enhanced Learning)</span><br>Certificate Course in DBMS</li>
+                            <li><span>ISO certifite Disha Institute</span><br>Certificate Course in 'C language' and 'C++ language'.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------services------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/Ux and Web Design</h2>
+                    <p>Skill: HTML, CSS, Bootstrap,WordPress,Adobe Photoshop. </p>
+                    <a href="#about">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End Development</h2>
+                    <p>Skill: HTML, CSS, JavaScript, Bootstrap,ReactJS, SQL</p>
+                    <a href="#about">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Web Development</h2>
+                    <p>Skill: Core Java, JSP, ServletHibernate, Spring, JDBC</p>
+                    <a href="#about">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Portfolio------------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="image not found">
+                    <div class="layer">
+                        <h3>Unite Gymansium Web App</h3>
+                        <p>A responsive full-stack website that allows users to purchase a single fitness pass to gain access to all connected health clubs or studios Owners of gyms can connect with Unite Gymnasium by registering their facility.
+                            </p>
+                            <br>
+                         <p>Tech Stack: HTML, CSS, JavaScript, Bootstrap, SQL, ASP.NET MVC.
+                        </p>   
+                        <a href="https://unitegymnasium.bsite.net/index"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="image not found">
+                    <div class="layer">
+                        <h3> MEDI Hospital Management Website</h3>
+                        <p>
+                            The hospital management system is an application in which users can get doctor appointments online from any specialist doctor, and doctors can see their daily appointments and attend them. Hospital administrators can manage all doctor and patient appointments.
+                            </p><br>
+                            <P>Tech Stack: HTML, CSS, JavaScript, Bootstrap, SQL, Java-Servlet, JSP, and JDBC</P>
+                        <a href="https://github.com/VinayFunde/Hospital_system"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="image not found" >
+                    <div class="layer">
+                        <h3>Weather Forecast Website</h3>
+                        <p>In this project, you will make a web application to check out the weather forecast for the current day and for the next few days. In addition, a feature to automatically detect the location can add to the versatility of the project.
+                            </p><br>
+                        <p>Tech Stack: HTML, CSS, JavaScript, Node.js, ReactJS.</p>
+                        <a href="https://github.com/VinayFunde/weather-forecast-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------contact---------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vineyfunde@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9130354686</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Vinay_Funde Resume (1-3-2024).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button  class="btn btn2" type="submit" >SUMIT</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @vinayfunde  </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwL_GZM3viSoE0ZmnBwginlfNffMz9UJFDLFfIpb8cB1h59zPnd4a5bDbsCByXRkHT5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message Sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
